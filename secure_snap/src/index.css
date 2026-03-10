@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-textMain;
+}
+
+@keyframes bgPulse {
+  0% {
+    filter: brightness(1.05) saturate(1.2);
+  }
+  100% {
+    filter: brightness(1.2) saturate(1.4);
+  }
+}
+
+.login-bg {
+  animation: bgPulse 6s ease-in-out infinite alternate;
+}
